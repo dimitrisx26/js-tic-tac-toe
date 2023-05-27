@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #daebff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #3a3b3c;
+    margin-top: 2%;
+    margin-bottom: 8%;
+    font-size: 60px;
+}
+
+.cell-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 380px;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #3a3b3c;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #f80047;
+}
+
+.cell:first-child, 
+.cell:nth-child(2), 
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n) {
+    border-right: none;
+}
+
+.cell:nth-child(1n+7) {
+    border-bottom: none;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+
+.cell:hover {
+    background: #f8004651;
+    background
+}
