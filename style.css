@@ -3,6 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%
 }
 
 body {
@@ -13,12 +14,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: auto;
+    margin-bottom: 100px;
 }
 
 h1 {
     color: #3a3b3c;
-    margin-top: 2%;
-    margin-bottom: 8%;
+    margin-bottom: 70px;
     font-size: 60px;
 }
 
@@ -29,7 +31,6 @@ h1 {
     width: 380px;
     justify-content: center;
     align-items: center;
-    overflow: auto;
 }
 
 .cell {
@@ -39,7 +40,6 @@ h1 {
     width: 120px;
     height: 120px;
     border: 5px solid #3a3b3c;
-    text-align: center;
     font-size: 72px;
     font-weight: bold;
     cursor: pointer;
@@ -66,4 +66,36 @@ h1 {
 
 .cell:hover {
     background: #f8004620;
+}
+
+.unclickable {
+    pointer-events: none;
+    cursor: default;
+}
+
+.announcement {
+    margin: 26px 0 26px 0;
+    font-size: 42px;
+    color: #3a3b3c;
+}
+
+.new-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+    font-size: 32px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 3px 4px 4px 1px #3a3b3c80;
+    border-radius: 12px;
+    background: #daebff;
+    color: #3a3b3c;
+    cursor: pointer;
+    
+}
+
+.new-game:hover {
+    margin-bottom: 24px;
+    border: 1px solid #3a3b3c;
 }
